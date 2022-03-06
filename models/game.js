@@ -7,7 +7,7 @@ const gameSchema = new Schema({
   title: String,
   date: Date,
   location: String,
-  teams: ObjectId,
+  teams: {type: Schema.Types.ObjectId, ref: "Profile"}
 })
 
 const Game = mongoose.model('Game', gameSchema)
