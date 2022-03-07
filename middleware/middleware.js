@@ -1,8 +1,8 @@
 function passUserToView(req, res, next) {
-  res.local.user = req.user ? req.user : null
+  res.locals.user = req.user ? req.user : null
   next()
 }
 
 export {
-  passUserToView
+  passUserToView,
 }
