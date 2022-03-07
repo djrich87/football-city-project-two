@@ -1,8 +1,10 @@
 import { Router } from 'express'
+import * as gamesCtrl from '../controllers/games.js'
 
 const router = Router()
 
-router.get('/', )
+// GET - localhost:3000/games
+router.get('/', gamesCtrl.index)
 
 
 export {
