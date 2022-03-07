@@ -3,10 +3,24 @@
 
 <section>
   <h1>Games!</h1>
+  <% if (user) { %>
+  <h2>Add a Game!</h2>
+  <form action="games" method="POST">
+    <label>
+      Name:
+      <input type="text" name="name" autocomplete="off">
+    </label>
+    <label>
+      Attended?
+      <input type="checkbox" name="attended">
+    </label>
+    <button type="submit">Add Game</button>
+  </form>
+  <% } %>
   <h2>All Games</h2>
 	<ul>
   <% games.forEach(game => { %>
-    <li> <%= game.name %> is <%= game.tasty ? 'game' : 'game' %></li>
+    <li> <%= game.name %> is <%= game.attended ? 'game' : 'game' %></li>
   <% }) %>
   </ul>
 </section>
