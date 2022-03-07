@@ -57,9 +57,45 @@ function flipAttended(req, res) {
   })
 }
 
+function edit(req, res) {
+  Game.findById(req.params.id)
+  .then(game => {
+    res.render('game/edit',{
+      game,
+      title: "edit game"
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/games')
+  })
+}
+
+function update(req, res) {
+  Game.findById(req.params.id)
+  .then(game => {
+    if (game.teams.equals(req.user.profile._id)) {
+    req.body.attended = !!req.body.attended
+    game.updateOne(req.body, {new: true})
+    .then(()=> {
+      res.redirect(`/games/${game._id}`)
+    })
+    } else {
+      throw new Error ('🚫 Not authorized 🚫')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect(`/games`)
+  })
+}
+
+
 export {
   index,
   create,
   show,
   flipAttended,
+  edit,
+  update,
 }
