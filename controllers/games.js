@@ -42,8 +42,24 @@ function show(req, res) {
   })
 }
 
+function flipAttended(req, res) {
+  Game.findById(req.params.id)
+  .then(game => {
+    game.attended = !game.attended
+    game.save()
+    .then(() => {
+      res.redirect(`/games/${game._id}`)
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/games')
+  })
+}
+
 export {
   index,
   create,
   show,
+  flipAttended,
 }

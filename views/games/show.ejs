@@ -16,6 +16,11 @@
       </button>
     </form>
   <% } %>
+  <% if (game.teams.equals(user?.profile._id)) { %>
+    <form action="/games/<%= game._id %>/edit" method="GET">
+      <button class="btn" type="submit">Edit this Game </button>
+    </form>
+  <% } %>
 
 </section>
 <%- include('../partials/footer') %>
