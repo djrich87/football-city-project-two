@@ -7,6 +7,7 @@ function index(req, res) {
     res.render('games/index', {
       games,
       title: 'games',
+      user: req.user ? req.user : null
     })
   })
   .catch(err =>{
@@ -16,8 +17,9 @@ function index(req, res) {
 }
 
 function create(req, res) {
-  req.body.owner = req.user.profile._id
-  req.body.attended = !!req.body.attendedGame.create(req.body)
+  req.body.teams = req.user.profile._id
+  req.body.attended = !!req.body.attended
+  Game.create(req.body)
   .then(game => {
     res.redirect('/games')
   })
