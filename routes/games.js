@@ -7,6 +7,8 @@ const router = Router()
 // GET - localhost:3000/games
 router.get('/', gamesCtrl.index)
 
+// GET - localhost:3000/games/:id
+router.get('/:id', gamesCtrl.show)
 
 // POST - localhost:3000/games
 router.post('/', isLoggedIn, gamesCtrl.create)

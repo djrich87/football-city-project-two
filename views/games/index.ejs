@@ -2,7 +2,7 @@
 <%- include('../partials/nav') %>
 
 <section>
-  <h1>Games!</h1>
+  <h1>NFL Games</h1>
   <% if (user) { %>
   <h2>Add a Game!</h2>
   <form action="games" method="POST">
@@ -20,7 +20,7 @@
   <h2>All Games</h2>
 	<ul>
   <% games.forEach(game => { %>
-    <li> <%= game.name %> is <%= game.attended ? 'game' : 'game' %></li>
+    <li> <%= game.name %> is <%= game.attended ? 'attended' : 'not attended' %></li>
   <% }) %>
   </ul>
 </section>
