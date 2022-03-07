@@ -19,6 +19,12 @@ router.post('/', isLoggedIn, gamesCtrl.create)
 // PUT - localhost:3000/
 router.put('/:id', isLoggedIn, gamesCtrl.update)
 
+// PATCH - localhost:3000/games/:id/flip-attended
+router.patch('/:id/flip-attended', isLoggedIn, gamesCtrl.flipAttended)
+
+// DELETE - localhost:3000/games/:id
+router.delete('/:id', isLoggedIn, gamesCtrl.delete)
+
 export {
   router
 }

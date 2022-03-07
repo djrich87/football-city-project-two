@@ -20,7 +20,9 @@
     <form action="/games/<%= game._id %>/edit" method="GET">
       <button class="btn" type="submit">Edit this Game </button>
     </form>
+    <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
+      <button class="btn" type="submit">Delete this Game</button>
+    </form>
   <% } %>
-
 </section>
 <%- include('../partials/footer') %>

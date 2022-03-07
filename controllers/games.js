@@ -86,10 +86,27 @@ function update(req, res) {
   })
   .catch(err => {
     console.log(err)
-    res.redirect(`/games`)
+    res.redirect('/games')
   })
 }
 
+function deleteGame(req, res) {
+Game.findById(req.params.id)
+.then(game => {
+  if (game.teams.equals(req.user.profile._id)) {
+    game.delete()
+    .then(() => {
+      res.redirect('/games')
+    })
+  } else {
+    throw new Error ('🚫 Not authorized 🚫')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/games')
+  })
+}
 
 export {
   index,
@@ -98,4 +115,5 @@ export {
   flipAttended,
   edit,
   update,
+  deleteGame as delete,
 }
