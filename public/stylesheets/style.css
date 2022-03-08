@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background-color: gray;
+  background-color: rgb(4, 59, 161);
   /* Use a system font, if none are available use an available sans-sarif font */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -41,10 +41,12 @@ main {
 
 h1 {
   font-size: 3.6rem;
+  color:rgb(255, 255, 255);
 }
 
 h2 {
   font-size: 3rem;
+  color:rgb(255, 255, 255);
 }
 
 h3 {
@@ -61,6 +63,7 @@ p, label, li, button, input {
 
 label {
   font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
 section {
@@ -68,7 +71,7 @@ section {
 }
 
 a {
-  color: #00B7FF;
+  color: #ff0000;
 }
 
 pre {

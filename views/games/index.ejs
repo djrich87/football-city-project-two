@@ -4,8 +4,8 @@
 <section>
   <h1>NFL Games</h1>
   <% if (user) { %>
-  <h2>Add a Game!</h2>
-  <form action="games" method="POST">
+  <h2>Add a Game</h2>
+  <form action="/games" method="POST">
     <label>
       Home Team:
       <input type="text" name="name" autocomplete="off"> 
@@ -14,6 +14,10 @@
       
       Away Team:
       <input type="text" name="name" autocomplete="off">
+    </label>
+    <label>
+      Date:
+      <input type="date" name="date">
     </label>
     <label>
       Attended?
