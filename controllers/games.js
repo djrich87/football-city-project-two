@@ -7,7 +7,6 @@ function index(req, res) {
     res.render('games/index', {
       games,
       title: 'games',
-      user: req.user ? req.user : null
     })
   })
   .catch(err =>{
