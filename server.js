@@ -8,7 +8,6 @@ import logger from 'morgan'
 import methodOverride from 'method-override'
 import passport from 'passport'
 import { passUserToView } from './middleware/middleware.js'
-import { router as profilesRouter } from './routes/profiles.js'
 
 // connect to MongoDB with mongoose
 import('./config/database.js')
