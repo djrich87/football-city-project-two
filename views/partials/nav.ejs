@@ -6,6 +6,12 @@
   <nav>
     <a href="/games">All Games</a>
     <a href="/profiles">Profiles</a>
+
+    <a href="/teams/new" 
+      <%- === 'Add Team' ? 'class="active"' : "" %>>
+    Add Team
+    </a>
+
     <% if (user) { %>
       <a href="/auth/logout">
         <button type="submit">Logout</button>

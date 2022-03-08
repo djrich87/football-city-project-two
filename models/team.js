@@ -3,7 +3,7 @@ import mongoose from "mongoose"
 const Schema = mongoose.Schema
 
 const teamSchema = new mongoose.Schema({
-  name: String,
+  name: {type: String, required: true, unique: true},
   content: String,
   city: String,
 }, {
