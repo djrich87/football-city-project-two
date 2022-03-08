@@ -11,6 +11,7 @@ const nflTeamsSchema = new mongoose.Schema({
 const profileSchema = new mongoose.Schema({
   name: String,
   avatar: String,
+  teams: [nflTeamsSchema],
 }, {
   timestamps: true
 })
