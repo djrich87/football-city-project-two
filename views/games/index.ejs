@@ -9,7 +9,6 @@
   <form 
   action="/games" method="POST">
 
-
     <select name="teamId-one">
       <% teams.forEach(team => { %>
         <option value="<%= team._id %>"><%= team.name %></option>
@@ -25,15 +24,17 @@
 
 
     <label>
-      Team Name: 
+      Game Name: 
       <input type="text" name="name" autocomplete="off">
     </label>
+    <!-- add date later -->
     <label>
       City: 
       <input type="text" name="city" autocomplete="off">
     </label>
     
-    <button type="submit">Add NFL Team</button>
+    <button type="submit">Add NFL Game</button>
+
 
   </form>
 
@@ -42,7 +43,9 @@
   <h2>All Games</h2>
 	<ul>
   <% games.forEach(game => { %>
-    <li> <%= game.name %> is <%= game.attended ? 'attended' : 'not attended' %></li>
+    <li> 
+      <a href="/games/<%=game._id%>"><%= game.name %> </a>
+    </li>
   <% }) %>
   </ul>
 </section>

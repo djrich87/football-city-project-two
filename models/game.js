@@ -7,7 +7,6 @@ const gameSchema = new Schema({
   title: String,
   date: Date,
   location: String,
-  attended: Boolean,
   teams: [{type: Schema.Types.ObjectId, ref: "Team"}],
   owner: {type: Schema.Types.ObjectId, ref: "Profile"},
 })
