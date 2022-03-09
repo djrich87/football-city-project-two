@@ -1,0 +1,50 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h1>NFL Games</h1>
+  <% if (user) { %>
+  <h2>Add a Game</h2>
+
+  <form 
+  action="/games" method="POST">
+
+
+    <select name="teamId-one">
+      <% teams.forEach(team => { %>
+        <option value="<%= team._id %>"><%= team.name %></option>
+      <% }) %>
+    </select>
+
+
+    <select name="teamId-two">
+      <% teams.forEach(team => { %>
+        <option value="<%= team._id %>"><%= team.name %></option>
+      <% }) %>
+    </select>
+
+
+    <label>
+      Team Name: 
+      <input type="text" name="name" autocomplete="off">
+    </label>
+    <label>
+      City: 
+      <input type="text" name="city" autocomplete="off">
+    </label>
+    
+    <button type="submit">Add NFL Team</button>
+
+  </form>
+
+
+  <% } %>
+  <h2>All Games</h2>
+	<ul>
+  <% games.forEach(game => { %>
+    <li> <%= game.name %> is <%= game.attended ? 'attended' : 'not attended' %></li>
+  <% }) %>
+  </ul>
+</section>
+
+<%- include('../partials/footer') %>

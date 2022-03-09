@@ -1,0 +1,22 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<main>
+  <h1><%= Team %></h1>
+  <p>
+    Please first ensure that the Team is not in the dropdown!
+    <section>
+      <% teams.forEach(team => { %> 
+      <option><%= team.name %> </option>
+    <% }) %>
+    </section>
+  </p>
+  <form id="add-team-form" action="">
+    <label for="name-input">Team Name:</label>
+    <input type="text" name="name" id="name-input">
+    <button type="submit"></button>
+  </form>
+</main>
+
+
+<%- include('../partials/footer') %>

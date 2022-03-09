@@ -1,0 +1,28 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+	<p>This game features <%= game.teams.name %> vs <%= game.teams.name %> </p>
+  <h1><%= game.name %></h1>
+  <h2>This game has been <%= game.attended ? 'attended!' : 'not attended!' %></h2>
+  
+  <% if (user) { %>
+    <form 
+      action="/games/<%= game._id %>/flip-attended?_method=PATCH" 
+      method="POST"
+    >
+      <button class="btn" type="submit">
+        Attend Game <%= game.attended ? 'not attended' : 'attended' %>
+      </button>
+    </form>
+  <% } %>
+  <% if (game.owner.equals(user?.profile._id)) { %>
+    <form action="/games/<%= game._id %>/edit" method="GET">
+      <button class="btn" type="submit">Edit this Game </button>
+    </form>
+    <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
+      <button class="btn" type="submit">Delete this Game</button>
+    </form>
+  <% } %>
+</section>
+<%- include('../partials/footer') %>
