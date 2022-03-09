@@ -14,6 +14,15 @@
       >
     </label>
     <label>
+      City: 
+      <input 
+        type="text"
+        name="city" 
+        value="<%= game.city %>" 
+        autocomplete="off"
+      >
+    </label>
+    <label>
       Attended?
       <input 
         type="checkbox" 
@@ -21,7 +30,7 @@
 				<%= game.attended ? "checked" : "" %> 
       >
     </label>
-    <button type="submit">Edit the Game</button>
+    <button type="submit">Submit the Game</button>
   </form>
 
 </section>

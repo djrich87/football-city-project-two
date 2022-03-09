@@ -91,7 +91,8 @@ function flipAttended(req, res) {
 function edit(req, res) {
   Game.findById(req.params.id)
   .then(game => {
-    res.render('game/edit',{
+    console.log('game', game)
+    res.render('games/edit',{
       game,
       title: "edit game"
     })
@@ -103,8 +104,10 @@ function edit(req, res) {
 }
 
 function update(req, res) {
+  console.log('req.body', req.body)
   Game.findById(req.params.id)
   .then(game => {
+    console.log('game', game)
     if (game.teams.equals(req.user.profile._id)) {
     req.body.attended = !!req.body.attended
     game.updateOne(req.body, {new: true})

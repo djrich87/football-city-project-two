@@ -4,9 +4,8 @@ const Schema = mongoose.Schema
 
 const gameSchema = new Schema({
   name: String,
-  title: String,
   date: Date,
-  location: String,
+  city: String,
   teams: [{type: Schema.Types.ObjectId, ref: "Team"}],
   owner: {type: Schema.Types.ObjectId, ref: "Profile"},
 })
