@@ -3,9 +3,11 @@ import * as teamsCtrl from "../controllers/teams.js"
 
 const router = Router()
 
-// localhost:3000/teams
-
+// GET - localhost:3000/teams/new
 router.get('/new', teamsCtrl.new)
+
+// POST - localhost:3000/teams
+router.post('/', teamsCtrl.create)
 
 export {
   router

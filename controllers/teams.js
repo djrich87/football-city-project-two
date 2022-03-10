@@ -9,6 +9,14 @@ function newTeam(req, res) {
   })
 }
 
+function create(req, res) {
+  Team.create(req.body, function (err, performer) {
+    res.redirect('/teams/new')
+  })
+}
+
+
 export {
   newTeam as new,
+  create,
 }
