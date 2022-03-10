@@ -2,14 +2,14 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <h1><%= Team %></h1>
+  <h1> <%= title %> </h1>
   <p>
     Please first ensure that the Team is not in the dropdown!
-    <section>
+    <select>
       <% teams.forEach(team => { %> 
       <option><%= team.name %> </option>
     <% }) %>
-    </section>
+      </select>
   </p>
   <form id="add-team-form" action="">
     <label for="name-input">Team Name:</label>
