@@ -8,7 +8,7 @@ function index(req, res) {
       res.render('games/index', {
         games,
         teams,
-        title: 'games',
+        title: 'Football City: All Games',
       })
     })
   })
@@ -97,7 +97,7 @@ function edit(req, res) {
     console.log('game', game)
     res.render('games/edit',{
       game,
-      title: "edit game"
+      title: "Football City: Edit Game"
     })
   })
   .catch(err => {

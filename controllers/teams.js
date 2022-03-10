@@ -3,7 +3,7 @@ import { Team } from "../models/team.js"
 function newTeam(req, res) {
   Team.find({}, function (err, teams) {
     res.render('teams/new', {
-      title: "Add Team",
+      title: "Football City: Add Team",
       teams
     })
   })

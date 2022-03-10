@@ -13,40 +13,7 @@
   <% } %>
   <h1>It's <%= isSelf ? "you" : profile.name %>!</h1>
   
-  <!-- <% if (isSelf)  {%> 
-    <h2>Add a Game!</h2>
-    <form action="/profiles/<%= profile._id %>/teams" method="POST">
-
-
-      <select name="teamId-one">
-        <% teams.forEach(team => { %>
-          <option value="<%= team._id %>"><%= team.name %></option>
-        <% }) %>
-      </select>
-
-
-      <select name="teamId-two">
-        <% teams.forEach(team => { %>
-          <option value="<%= team._id %>"><%= team.name %></option>
-        <% }) %>
-      </select>
-
-
-      <label>
-        Team Name: 
-        <input type="text" name="name" autocomplete="off">
-      </label>
-      <label>
-        City: 
-        <input type="text" name="city" autocomplete="off">
-      </label>
-      
-      <button type="submit">Add NFL Team</button>
   
-    </form>
-  <% } else  { %>
-    <h1> Nothing to Display </h1>
-  <% } %> -->
 </main>
 
 <%- include('../partials/footer') %>

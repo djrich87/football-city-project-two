@@ -3,50 +3,52 @@
 <%- include('../partials/nav') %>
 
 <section>
-  <h1>NFL Games</h1>
   <% if (user) { %>
-  <h2>Add a Game</h2>
+  <div class="section-one">
+    <h1>Add a NFL Game</h1>
 
-  <form 
-  action="/games" method="POST">
-    <div class="team-container">
-      <select name="teamOne">
-        <% teams.forEach(team => { %>
-        <option value="<%= team._id %>"><%= team.name %></option>
-        <% }) %>
-      </select>
-      
-      <div class="vs">
-      <p>  VS  </p>
+    <form 
+    action="/games" method="POST">
+      <div class="team-container">
+        <select name="teamOne">
+          <% teams.forEach(team => { %>
+          <option value="<%= team._id %>"><%= team.name %></option>
+          <% }) %>
+        </select>
+        
+        <div class="vs">
+        <p>  VS  </p>
+        </div>
+
+        <select name="teamTwo">
+          <% teams.forEach(team => { %>
+            <option value="<%= team._id %>"><%= team.name %></option>
+          <% }) %>
+        </select>
+      </div>
+        
+      <div class="game-details">
+        <label>
+          Game Name: 
+          <input type="text" name="name" autocomplete="off">
+        </label>
+        <!-- add date later -->
+        <label>
+          City: 
+          <input type="text" name="city" autocomplete="off">
+        </label>
       </div>
 
-      <select name="teamTwo">
-        <% teams.forEach(team => { %>
-          <option value="<%= team._id %>"><%= team.name %></option>
-        <% }) %>
-      </select>
-    </div>
-      
-    <div class="game-details">
-      <label>
-        Game Name: 
-        <input type="text" name="name" autocomplete="off">
-      </label>
-      <!-- add date later -->
-      <label>
-        City: 
-        <input type="text" name="city" autocomplete="off">
-      </label>
-    </div>
+      <div class="add-game-button">
+        <button type="submit">Add NFL Game</button>
+      </div>
 
-    <div class="add-game-button">
-      <button type="submit">Add NFL Game</button>
-    </div>
-
-  </form>
-
+    </form>
+  </div>
 
   <% } %>
+  
+  <div class="section2">
   <h2>All Games</h2>
 	<ul>
   <% games.forEach(game => { %>
@@ -56,5 +58,6 @@
   <% }) %>
   </ul>
 </section>
+</div>
 
 <%- include('../partials/footer') %>
