@@ -16,8 +16,10 @@
         <% }) %>
       </select>
       
+      <div class="vs">
       <p>  VS  </p>
-      
+      </div>
+
       <select name="teamTwo">
         <% teams.forEach(team => { %>
           <option value="<%= team._id %>"><%= team.name %></option>
