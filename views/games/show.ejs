@@ -2,7 +2,7 @@
 <%- include('../partials/nav') %>
 
 <section>
-  <p>This game features <%= game.teams.name %> vs <%= game.teams.name %> </p>
+  <h1>This game features <%= game.teams[0].name %> vs <%= game.teams[1].name %> </h1>
   <h1><%= game.name %></h1>
   <h2> <%= game.city %> </h2>
   <h2>You are <%= attending ? 'attending' : 'not attending' %> this game.</h2>

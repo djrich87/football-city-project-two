@@ -36,6 +36,9 @@ function create(req, res) {
   req.body.attended = !!req.body.attended
   Game.create(req.body)
   .then(game => {
+    game.teams.push(req.body.teamOne)
+    game.teams.push(req.body.teamTwo)
+    game.save()
     res.redirect('/games')
   })
   .catch(err => {

@@ -9,14 +9,15 @@
   <form 
   action="/games" method="POST">
 
-    <select name="teamId-one">
+    <select name="teamOne">
       <% teams.forEach(team => { %>
         <option value="<%= team._id %>"><%= team.name %></option>
       <% }) %>
     </select>
 
+    <p>  VS  </p>
 
-    <select name="teamId-two">
+    <select name="teamTwo">
       <% teams.forEach(team => { %>
         <option value="<%= team._id %>"><%= team.name %></option>
       <% }) %>
