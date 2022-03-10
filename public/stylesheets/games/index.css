@@ -1,11 +1,11 @@
 .section-one {
-  display: flex;
+  display: flexbox;
   flex-direction: column;
   align-items: left;
 }
 
 .section-two {
-  display: flex;
+  display: flexbox;
   flex-direction: column;
   align-items: right;
 }
