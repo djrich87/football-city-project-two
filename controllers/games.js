@@ -107,34 +107,35 @@ function update(req, res) {
   console.log('req.body', req.body)
   Game.findById(req.params.id)
   .then(game => {
-    console.log('game', game)
-    if (game.teams.equals(req.user.profile._id)) {
+    // if (game.teams.equals(req.user.profile._id)) {
+      console.log('game', game)
     req.body.attended = !!req.body.attended
     game.updateOne(req.body, {new: true})
     .then(()=> {
       res.redirect(`/games/${game._id}`)
-    })
-    } else {
-      throw new Error ('🚫 Not authorized 🚫')
-    }
+    // })
+    // } else {
+    //   throw new Error ('🚫 Not authorized 🚫')
+    // }
   })
   .catch(err => {
     console.log(err)
     res.redirect('/games')
   })
 }
+  )}
 
 function deleteGame(req, res) {
 Game.findById(req.params.id)
 .then(game => {
-  if (game.teams.equals(req.user.profile._id)) {
+  // if (game.teams.equals(req.user.profile._id)) {
     game.delete()
     .then(() => {
       res.redirect('/games')
     })
-  } else {
-    throw new Error ('🚫 Not authorized 🚫')
-    }
+  // } else {
+  //   throw new Error ('🚫 Not authorized 🚫')
+  //   }
   })
   .catch(err => {
     console.log(err)
