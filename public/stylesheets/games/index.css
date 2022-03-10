@@ -1,0 +1,35 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 75%;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.game-details {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.add-game-button {
+  align-items: center;
+}
+
+.a {
+  align-items: center;
+}
