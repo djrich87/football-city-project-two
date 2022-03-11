@@ -5,13 +5,26 @@
 
 ***
 
-## Football City Layout
+## Football City Instructions with Visuals
+
+
+### 1. Welcome Screen: Press the Google login button to sign into the application
+![Login Screen](/public/README-images/football-city-one.png "Press the Google login button to sign into the application")
+
+### 2. Welcome Screen: Press the Google login button to sign into the application
+![Welcome Screen](/public/README-images/football-city-two.png "Page will show the logged in user after signing into Google")
+
+### 3. Add NFL Game/All Games Page: The All Games page will display displaying where the user can add a game to the left of the screen. All games listed will be on the right of the screen.
+![Add NFL Game/All Games Page](/public/README-images/football-city-three.png "The All Games page will display displaying where the user can add a game to the left of the screen. All games listed will be on the right of the screen")
+
+### 4. Add Team Page: Clicking on the Add Team tab will take you to the Add Team page where you can add a NFL team of your choice in the input. Write the team then press the Add Team button.
+![Add Team](/public/README-images/football-city-four.png "Add Team Page: Clicking on the Add Team tab will take you to the Add Team page where you can add a NFL team of your choice in the input. Write the team then press the Add Team button.")
 
 ***
 
 ## Background
 
-The Footblal City application was influenced by my passion for NFL football and travel. When I was brainstorming ideas for my Unit Two project I reflected on personal interests and hobbies. Football came to mind first due to my time playing the sport and years of watching the game. Having traveled around the world and all over the United States I wanted to incorporate cities into my concept. Thus, I came up with Football City. A application that allows NFL fans to register their attendance at NFL games around the country. A fun and interactive way to document what teams and cities NFL fans have visited to watch games.
+The Football City application was influenced by my passion for NFL football and travel. When I was brainstorming ideas for my Unit Two project I reflected on personal interests and hobbies. Football came to mind first due to my time playing the sport and years of watching the game. Having traveled around the world and all over the United States I wanted to incorporate cities into my concept. Thus, I came up with Football City. A application that allows NFL fans to register their attendance at NFL games around the country. A fun and interactive way to document what teams and cities NFL fans have visited to watch games.
 
 ***
 ## Technologies Used
