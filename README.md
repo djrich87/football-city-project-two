@@ -2,7 +2,6 @@
 
 [Football City launch](https://football-city.herokuapp.com/)
 
-
 ***
 
 ## Football City Instructions with Visuals
@@ -19,6 +18,21 @@
 
 ### 4. Add Team Page: Clicking on the Add Team tab will take you to the Add Team page where you can add a NFL team of your choice in the input. Write the team then press the Add Team button.
 ![Add Team](/public/README-images/football-city-four.png "Add Team Page: Clicking on the Add Team tab will take you to the Add Team page where you can add a NFL team of your choice in the input. Write the team then press the Add Team button.")
+
+### 5. After adding a team the drop downs will display the added NFL Team.
+![Add Team Dropdown](/public/README-images/football-city-five.png "After adding a team the drop downs will display the added NFL Team.")
+
+### 6. Return to the Add Game page where you can fill in game details and the hosting city. Press the Add NFL Game.
+![Add NFL Game with Details](/public/README-images/football-city-six.png "Return to the Add Team page where you can fill in game details and the hosting city. Press the Add NFL Game.")
+
+### 7. Aftering entering your game it will be listed on the right of the All Games page under the All Games list.
+![All Games List](/public/README-images/football-city-seven.png "Aftering entering your game it will be listed on the right of the All Games page under the All Games list.")
+
+### 8. Click on a game that is listed. This will direct the user to game details and options to: attend, edit or delete the game."
+![Game Details and Actions](/public/README-images/football-city-eight.png "Click on a game that is listed. This will direct the user to game details and options to: attend, edit or delete the game.")
+
+### 9. If all the game details look correct then press Attend Game and enjoy the game you will be attending."
+![Game Details and Actions](/public/README-images/football-city-nine.png "Click on a game that is listed. This will direct the user to game details and options to: attend, edit or delete the game.")
 
 ***
 
@@ -47,7 +61,9 @@ The Football City application was influenced by my passion for NFL football and 
 
 ## App Development Preparation
 
-#### Wireframing:
+#### Wireframing & Trello Planning:
+
+[Trello Unit Two Planning](https://trello.com/b/n6V6DnqV/football-city-unit-2-project-planning)
 
 ![Wireframe!](/wire-images/wire-framing-unit-two.png "Wireframe")
 
@@ -55,14 +71,14 @@ The Football City application was influenced by my passion for NFL football and 
 
 ## Icebox Items
 
-Add to my CSS design
+Add to the CSS
 
 Add sound
 
 Add a light dark mode
 
-Add API
+Add an API
 
-Add a Stadium model
+Add a stadium model
 
-CSS adjustments and button sizing
+Add Mongoose & Heroku badges
