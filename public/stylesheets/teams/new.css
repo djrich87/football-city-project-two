@@ -5,3 +5,7 @@ main {
 p {
   color: white;
 }
+
+#name-input {
+  margin: 10px;
+}
