@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="/stylesheets/games/index.css">
 <%- include('../partials/nav') %>
 
-<section>
+<section class="front-page">
   <% if (user) { %>
   <div class="section-one">
     <h1>Add a NFL Game</h1>
@@ -10,6 +10,8 @@
     <form 
     action="/games" method="POST">
       <div class="team-container">
+
+        
         <select name="teamOne">
           <% teams.forEach(team => { %>
           <option value="<%= team._id %>"><%= team.name %></option>
@@ -29,14 +31,14 @@
         
       <div class="game-details">
         <label>
-          Game Name: 
+          Game Details: 
           <input type="text" name="name" autocomplete="off">
         </label>
-        <!-- add date later -->
         <label>
           City: 
           <input type="text" name="city" autocomplete="off">
         </label>
+
       </div>
 
       <div class="add-game-button">
@@ -47,8 +49,8 @@
   </div>
 
   <% } %>
-  
-  <div class="section2">
+
+  <div class="section-two">
   <h2>All Games</h2>
 	<ul>
   <% games.forEach(game => { %>
@@ -57,7 +59,8 @@
     </li>
   <% }) %>
   </ul>
+  </div>
+
 </section>
-</div>
 
 <%- include('../partials/footer') %>

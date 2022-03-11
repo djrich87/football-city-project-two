@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(4, 59, 161);
+}
+
+nav a {
+  color: white;
+}
+
+nav button {
+  height: 27px;
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 30px;
+  border-radius: 5px;
+}
+
