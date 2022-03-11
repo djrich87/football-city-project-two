@@ -51,3 +51,5 @@ Add a light dark mode
 Add API
 
 Add a Stadium model
+
+CSS adjustments and button sizing
