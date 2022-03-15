@@ -64,11 +64,13 @@ The Football City application was influenced by my passion for NFL football and 
 
 ## App Development Preparation
 
-#### Wireframing & Trello Planning:
+#### Trello Planning & ERD:
 
 [Trello Unit Two Planning](https://trello.com/b/n6V6DnqV/football-city-unit-2-project-planning)
 
-![Wireframe!](/wire-images/wire-framing-unit-two.png "Wireframe")
+[Wireframing](https://whimsical.com/city-slicker-football-app-wireframe-unit-2-YQ5V5Mbpmyggp1z3RDRjug)
+
+![ERD!](/wire-images/wire-framing-unit-two.png "ERD")
 
 ***
 
