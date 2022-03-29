@@ -86,4 +86,4 @@ Add an API
 
 Add a stadium model
 
-Add Mongoose & Heroku badges
+Add Mongoose badge
