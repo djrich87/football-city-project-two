@@ -6,7 +6,7 @@
 
 ## Background
 
-The Football City application was influenced by my passion for NFL football and travel. When I was brainstorming ideas for my Unit Two project I reflected on personal interests and hobbies. Football came to mind first due to my time playing the sport and years of watching the game. Having traveled around the world and all over the United States I wanted to incorporate cities into my concept. Thus, I came up with Football City. A application that allows NFL fans to register their attendance at NFL games around the country. A fun and interactive way to document what teams and cities NFL fans have visited to watch games.
+The Football City application was influenced by my passion for NFL football and travel. When I was brainstorming ideas for my Unit Two project I reflected on personal interests and hobbies. Football came to mind first due to my time playing the sport and years of watching the game. Having traveled around the world and all over the United States I wanted to incorporate cities into my concept. Thus, I came up with Football City, an application that allows NFL fans to register their attendance at NFL games around the country. A fun and interactive way to document what teams and cities NFL fans have visited to watch games.
 
 ***
 
